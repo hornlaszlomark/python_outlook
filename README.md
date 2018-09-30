@@ -7,7 +7,9 @@ outlook = win32.client.Dispatch("Outlook.Application").GetNameSpace("MAPI")
 ```
 There are 2 ways from here
 1.) 
+```python
 root_folder = outlook.GetDefaultFolder(6)
+```
 
 OR
 2.)
