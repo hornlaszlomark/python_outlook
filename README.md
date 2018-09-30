@@ -1,22 +1,29 @@
-Microsoft Outlook manipulation with Python
 
-Let's start right away:
+
+# Microsoft Outlook manipulation with win32com (Python)
+
+This will always be the first thing to do when interacting with your Outlook on your computer:
+
 ```python
 import win32com.client
 outlook = win32.client.Dispatch("Outlook.Application").GetNameSpace("MAPI")
 ```
-There are 2 ways from here
-1.) 
+You can decide which path to take to continue.
+1.) The standard path where you choose the default folder.
 ```python
 root_folder = outlook.GetDefaultFolder(6)
 ```
 
-OR
+<b>OR</b> the custom path where you decide and deliberately choose which email address to use.
 2.)
 ```python
 root_folder = outlook.Folders(3).Items
 messages = root_folder.Folders.Item(1)
 ```
+
+Let's take number 2.) because it gives us more control over our script/program. 
+
+#TODO:
 
 Looping through folders:
 ```python
