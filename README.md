@@ -33,3 +33,7 @@ for folder in root_folder.Folders:
  - loop through messages and download attachments
  - loop through messsages and download certain attachments
  - writing and sending email
+
+```python
+import win32com.client
+```
