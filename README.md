@@ -17,8 +17,8 @@ root_folder = outlook.GetDefaultFolder(6)
 <b>OR</b> the custom path where you decide and deliberately choose which email address to use.
 2.)
 ```python
-root_folder = outlook.Folders(3).Items
-messages = root_folder.Folders.Item(1)
+root_folder = outlook.Folders(1).Items
+messages = root_folder.Folders.Item(1) # this should be the incoming messages folder
 ```
 
 Let's take number 2.) because it gives us more control over our script/program. 
