@@ -20,6 +20,11 @@ root_folder = outlook.GetDefaultFolder(6)
 root_folder = outlook.Folders(1).Items
 messages = root_folder.Folders.Item(1) # this should be the incoming messages folder
 ```
+You can also you the exact name of the folder. For example:
+3.)
+```python
+root_folder = outlook.Folders('Inbox').Items
+```
 
 Let's take number 2.) because it gives us more control over our script/program. 
 
