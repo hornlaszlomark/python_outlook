@@ -35,21 +35,16 @@ Looping through folders:
 for folder in root_folder.Folders:
   print(folder.Name)
  ``` 
- Reading messages:
  
- messages = root_folder.Items
- 
+ FIND MORE DETAILED INFO IN THE WIKI: https://github.com/hornlaszlomark/python_outlook/wiki
  
  ... to be continued ... 
  #TODO:
- - accessing parts of messages (Sender.Name, SenderEmailAddress, Body, etc.)  
+ - accessing parts of messages (Sender.Name, SenderEmailAddress, Body, etc.)
  - loop through messages
  - loop thorugh messages based on certain conditions
-    -   
  - loop through messages and download attachments
  - loop through messsages and download certain attachments
  - writing and sending email
 
-```python
-import win32com.client
-```
+All of the above is coming soon!
