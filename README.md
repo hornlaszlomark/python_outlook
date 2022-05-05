@@ -6,7 +6,7 @@ This will always be the first thing to do when interacting with your Outlook on 
 
 ```python
 import win32com.client
-outlook = win32.client.Dispatch("Outlook.Application").GetNameSpace("MAPI")
+outlook = win32.client.Dispatch("Outlook.Application").GetNamespace("MAPI")
 ```
 You can decide which path to take to continue.
 1.) The standard path where you choose the default folder.
